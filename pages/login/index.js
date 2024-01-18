@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from "./login.module.scss";
 const index = () => {
   return (
-    <div>index</div>
+    <div>login</div>
   )
 }
 
