@@ -1,0 +1,42 @@
+.navbar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    .dropdownWrapper{
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    select{
+        border: 0px;
+        height: 20px;
+        background-color: transparent;
+    }
+    select:hover{
+        color:#2a80b9;
+    }
+    .navOptions{
+        display: flex;
+        justify-content: center;
+        li {
+            list-style: none;
+            margin-right: 20px;
+            a{
+                display: flex;
+                color: black;
+                cursor: pointer;
+                text-decoration: none;
+                i{
+                    margin-right: 7px;
+                }
+            }
+            a:hover{
+                color: #2a80b9;
+            }
+        }
+    }
+}

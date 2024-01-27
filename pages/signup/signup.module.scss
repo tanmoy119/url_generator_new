@@ -57,15 +57,6 @@
             border-radius: 3px;
             padding: 5px 10px;
             border: 0px;
-            cursor: pointer;
-        }
-
-        p{
-            margin: 20px 0px;
-
-            &:hover{
-                color: #2a80b9;
-            }
         }
     }
 
@@ -77,5 +68,38 @@
             margin: 20px 0px;
         }
     }
-    
+    .optionsWrapper{
+        
+        h1{
+           font-size: 17px;
+           margin-bottom: 10px;
+        }
+
+        .options{
+            display: flex;
+            justify-content: flex-start;
+
+            button{
+                padding: 5px;
+                border: 0px;
+                border-radius: 3px;
+                margin-right: 5px;
+                background: black;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                cursor: pointer;
+
+                img{
+                    margin-right: 5px;
+                }
+
+                span{
+                    font-weight: 500;
+                }
+
+                
+            }
+        }
+    }
 }
