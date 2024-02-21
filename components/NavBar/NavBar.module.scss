@@ -1,0 +1,82 @@
+.navbar_container {
+  height: 65px;
+  //   background-color: pink;
+  color: #121417;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12.5px 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+
+  .logo_section {
+    font-size: 18px;
+    font-weight: 600;
+    .hub {
+      background-color: #0a80f7;
+      color: #ffff;
+    }
+  }
+
+  .nav_link_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    .nav_link {
+      font-size: 14px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+
+      &.active {
+        &::after {
+          width: 80%;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0%;
+        height: 1.5px;
+        background-color: #121417c4;
+        border-radius: 10px;
+      }
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        &::after {
+          width: 80%;
+        }
+      }
+    }
+    .nav_buttons {
+      height: 100%;
+      display: flex;
+      gap: 8px;
+      .sign_in {
+        width: 84px;
+        background-color: #1a80e5;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+
+      .register {
+        width: 84px;
+        background-color: #f0f2f5;
+        color: #121417;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}

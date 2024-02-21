@@ -1,9 +1,12 @@
-import React from 'react'
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const index = () => {
-  return (
-    <div>index</div>
-  )
-}
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/home");
+  }, []);
+  return <></>;
+};
 
-export default index
+export default index;
